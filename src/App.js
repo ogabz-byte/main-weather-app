@@ -53,15 +53,15 @@ const App = () => {
         {data.name != undefined && 
            <div className="bottom">
            <div className="feels">
-           {data.main ? <p className='bold'>{data.main.feels_like.toFixed()}&#8457;</p> : null }
+           {data.main ? <p>{data.main.feels_like.toFixed()}&#8457;</p> : null }
              <p>feels like</p>
            </div>
            <div className="humidity">
-           {data.main ? <p className='bold'>{data.main.humidity}%</p> : null }      
+           {data.main ? <p>{data.main.humidity}%</p> : null }      
              <p>humidity</p>
            </div>
            <div className="wind">
-           {data.wind ? <p className='bold'>{data.wind.speed.toFixed()}MPH</p> : null }
+           {data.wind ? <p>{data.wind.speed.toFixed()}MPH</p> : null }
              <p>wind speed</p>
            </div>
          </div>
