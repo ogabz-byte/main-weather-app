@@ -54,7 +54,7 @@ const App = () => {
            <div className="bottom">
            <div className="feels">
            {data.main ? <p>{data.main.feels_like.toFixed()}&#8457;</p> : null }
-             <p>feels like</p>
+             <p>feels</p>
            </div>
            <div className="humidity">
            {data.main ? <p>{data.main.humidity}%</p> : null }      
@@ -62,7 +62,7 @@ const App = () => {
            </div>
            <div className="wind">
            {data.wind ? <p>{data.wind.speed.toFixed()}MPH</p> : null }
-             <p>wind speed</p>
+             <p>wind</p>
            </div>
          </div>
         }
